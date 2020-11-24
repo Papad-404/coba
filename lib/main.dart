@@ -87,41 +87,40 @@ class Kategory extends StatelessWidget {
                     image: AssetImage('assets/images/wllpaper2.jpg'),
                     fit: BoxFit.cover)),
           ),
-          new Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              crossAxisAlignment: CrossAxisAlignment.center,
-              children: <Widget>[
-                Container(
-                  child: RaisedButton(
-                    child: Text('Kategori 1'),
-                    color: Colors.black54,
-                    textColor: Colors.white,
-                    onPressed: () {
-                      gotokum1(context);
-                    },
-                  ),
+          new Center(
+            child: new Column(children: <Widget>[
+              Container(
+                child: RaisedButton(
+                  child: Text('Kategori 1'),
+                  color: Colors.black54,
+                  textColor: Colors.white,
+                  onPressed: () {
+                    gotokum1(context);
+                  },
                 ),
-                Container(
-                  child: RaisedButton(
-                    child: Text('Kategori 2'),
-                    color: Colors.black54,
-                    textColor: Colors.white,
-                    onPressed: () {
-                      gotokum2(context);
-                    },
-                  ),
+              ),
+              Container(
+                child: RaisedButton(
+                  child: Text('Kategori 2'),
+                  color: Colors.black54,
+                  textColor: Colors.white,
+                  onPressed: () {
+                    gotokum2(context);
+                  },
                 ),
-                Container(
-                  child: RaisedButton(
-                    child: Text('Kategori 3'),
-                    color: Colors.black54,
-                    textColor: Colors.white,
-                    onPressed: () {
-                      gotokum3(context);
-                    },
-                  ),
+              ),
+              Container(
+                child: RaisedButton(
+                  child: Text('Kategori 3'),
+                  color: Colors.black54,
+                  textColor: Colors.white,
+                  onPressed: () {
+                    gotokum3(context);
+                  },
                 ),
-              ])
+              ),
+            ]),
+          )
         ]));
   }
 }

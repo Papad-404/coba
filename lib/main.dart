@@ -32,24 +32,32 @@ class Home extends StatelessWidget {
                     image: AssetImage('assets/images/wllpaper2.jpg'),
                     fit: BoxFit.cover)),
           ),
-          Center(
-            child: RaisedButton(
-              child: Text('Start'),
-              color: Colors.black54,
-              textColor: Colors.white,
-              onPressed: () {
-                gotoSecondact(context);
-              },
-            ),
-          ),
-          Center(
-            child: RaisedButton(
-              child: Text('Quit'),
-              color: Colors.black54,
-              textColor: Colors.white,
-              onPressed: () {},
-            ),
-          ),
+          new Column(
+              crossAxisAlignment: CrossAxisAlignment.center,
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: <Widget>[
+                const SizedBox(
+                  height: 20,
+                  width: 500,
+                ),
+                RaisedButton(
+                  child: Text('Start'),
+                  color: Colors.black54,
+                  textColor: Colors.white,
+                  padding: const EdgeInsets.all(10.0),
+                  onPressed: () {
+                    gotoSecondact(context);
+                  },
+                ),
+                Center(
+                  child: RaisedButton(
+                    child: Text('Quit'),
+                    color: Colors.black54,
+                    textColor: Colors.white,
+                    onPressed: () {},
+                  ),
+                ),
+              ])
         ])));
   }
 }

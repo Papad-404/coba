@@ -18,37 +18,39 @@ class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Scaffold(
-          appBar: AppBar(),
-          body: new Stack(children: <Widget>[
-            new Container(
-              decoration: BoxDecoration(
-                  image: DecorationImage(
-                      image: AssetImage('assets/images/wllpaper2.jpg'),
-                      fit: BoxFit.cover)),
+        debugShowCheckedModeBanner: false,
+        title: 'Flutter Demo',
+        theme: ThemeData(
+          primarySwatch: Colors.blue,
+          visualDensity: VisualDensity.adaptivePlatformDensity,
+        ),
+        home: Scaffold(
+            body: new Stack(children: <Widget>[
+          new Container(
+            decoration: BoxDecoration(
+                image: DecorationImage(
+                    image: AssetImage('assets/images/wllpaper2.jpg'),
+                    fit: BoxFit.cover)),
+          ),
+          Center(
+            child: RaisedButton(
+              child: Text('Start'),
+              color: Colors.black54,
+              textColor: Colors.white,
+              onPressed: () {
+                gotoSecondact(context);
+              },
             ),
-            new Column(children: <Widget>[
-              Container(
-                child: RaisedButton(
-                  child: Text('Start'),
-                  color: Colors.black54,
-                  textColor: Colors.white,
-                  onPressed: () {
-                    gotoSecondact(context);
-                  },
-                ),
-              ),
-              Container(
-                child: RaisedButton(
-                  child: Text('Quit'),
-                  color: Colors.black54,
-                  textColor: Colors.white,
-                  onPressed: () {},
-                ),
-              ),
-            ])
-          ])),
-    );
+          ),
+          Center(
+            child: RaisedButton(
+              child: Text('Quit'),
+              color: Colors.black54,
+              textColor: Colors.white,
+              onPressed: () {},
+            ),
+          ),
+        ])));
   }
 }
 

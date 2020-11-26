@@ -33,24 +33,31 @@ class Home extends StatelessWidget {
                     fit: BoxFit.cover)),
           ),
           new Column(
-              crossAxisAlignment: CrossAxisAlignment.center,
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
                 const SizedBox(
-                  height: 20,
-                  width: 500,
+                  height: 50,
                 ),
                 RaisedButton(
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(18.0),
+                    side: BorderSide(color: Colors.white),
+                  ),
                   child: Text('Start'),
-                  color: Colors.black54,
+                  color: Colors.black45,
                   textColor: Colors.white,
                   padding: const EdgeInsets.all(10.0),
                   onPressed: () {
                     gotoSecondact(context);
                   },
                 ),
+                const SizedBox(),
                 Center(
                   child: RaisedButton(
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(18.0),
+                      side: BorderSide(color: Colors.white),
+                    ),
                     child: Text('Quit'),
                     color: Colors.black54,
                     textColor: Colors.white,
@@ -89,6 +96,7 @@ class Kategory extends StatelessWidget {
     return Scaffold(
         appBar: AppBar(
           title: Text("Categories"),
+          backgroundColor: Colors.black,
         ),
         body: new Stack(children: <Widget>[
           new Container(
@@ -98,38 +106,52 @@ class Kategory extends StatelessWidget {
                     fit: BoxFit.cover)),
           ),
           new Center(
-            child: new Column(children: <Widget>[
-              Container(
-                child: RaisedButton(
-                  child: Text('Kategori 1'),
-                  color: Colors.black54,
-                  textColor: Colors.white,
-                  onPressed: () {
-                    gotokum1(context);
-                  },
-                ),
-              ),
-              Container(
-                child: RaisedButton(
-                  child: Text('Kategori 2'),
-                  color: Colors.black54,
-                  textColor: Colors.white,
-                  onPressed: () {
-                    gotokum2(context);
-                  },
-                ),
-              ),
-              Container(
-                child: RaisedButton(
-                  child: Text('Kategori 3'),
-                  color: Colors.black54,
-                  textColor: Colors.white,
-                  onPressed: () {
-                    gotokum3(context);
-                  },
-                ),
-              ),
-            ]),
+            child: new Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: <Widget>[
+                  Container(
+                    child: RaisedButton(
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(18.0),
+                        side: BorderSide(color: Colors.white),
+                      ),
+                      child: Text('Kategori 1'),
+                      color: Colors.black54,
+                      textColor: Colors.white,
+                      onPressed: () {
+                        gotokum1(context);
+                      },
+                    ),
+                  ),
+                  Container(
+                    child: RaisedButton(
+                      child: Text('Kategori 2'),
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(18.0),
+                        side: BorderSide(color: Colors.white),
+                      ),
+                      color: Colors.black54,
+                      textColor: Colors.white,
+                      onPressed: () {
+                        gotokum2(context);
+                      },
+                    ),
+                  ),
+                  Container(
+                    child: RaisedButton(
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(18.0),
+                        side: BorderSide(color: Colors.white),
+                      ),
+                      child: Text('Kategori 3'),
+                      color: Colors.black54,
+                      textColor: Colors.white,
+                      onPressed: () {
+                        gotokum3(context);
+                      },
+                    ),
+                  ),
+                ]),
           )
         ]));
   }
@@ -140,7 +162,8 @@ class Kumpulan1 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: Text("Stories"),
+          title: Text("Stories 1"),
+          backgroundColor: Colors.black,
         ),
         body: new Stack(children: <Widget>[
           new Container(
@@ -149,24 +172,27 @@ class Kumpulan1 extends StatelessWidget {
                     image: AssetImage('assets/images/wllpaper2.jpg'),
                     fit: BoxFit.cover)),
           ),
-          new Column(children: <Widget>[
-            Container(
-              child: RaisedButton(
-                child: Text('Cerita 1'),
-                color: Colors.black54,
-                textColor: Colors.white,
-                onPressed: () {},
-              ),
-            ),
-            Container(
-              child: RaisedButton(
-                child: Text('Cerita 2'),
-                color: Colors.black54,
-                textColor: Colors.white,
-                onPressed: () {},
-              ),
-            ),
-          ])
+          new Center(
+              child: new Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: <Widget>[
+                Container(
+                  child: RaisedButton(
+                    child: Text('Cerita 1'),
+                    color: Colors.black54,
+                    textColor: Colors.white,
+                    onPressed: () {},
+                  ),
+                ),
+                Container(
+                  child: RaisedButton(
+                    child: Text('Cerita 2'),
+                    color: Colors.black54,
+                    textColor: Colors.white,
+                    onPressed: () {},
+                  ),
+                ),
+              ]))
         ]));
   }
 }
@@ -176,27 +202,30 @@ class Kumpulan2 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: Text("Stories"),
+          title: Text("Stories 2"),
+          backgroundColor: Colors.black,
         ),
         body: Center(
-            child: Column(children: <Widget>[
-          Container(
-            child: RaisedButton(
-              child: Text('Cerita 1'),
-              color: Colors.black54,
-              textColor: Colors.white,
-              onPressed: () {},
-            ),
-          ),
-          Container(
-            child: RaisedButton(
-              child: Text('Cerita 2'),
-              color: Colors.black54,
-              textColor: Colors.white,
-              onPressed: () {},
-            ),
-          ),
-        ])));
+            child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: <Widget>[
+              Container(
+                child: RaisedButton(
+                  child: Text('Cerita 1'),
+                  color: Colors.black54,
+                  textColor: Colors.white,
+                  onPressed: () {},
+                ),
+              ),
+              Container(
+                child: RaisedButton(
+                  child: Text('Cerita 2'),
+                  color: Colors.black54,
+                  textColor: Colors.white,
+                  onPressed: () {},
+                ),
+              ),
+            ])));
   }
 }
 
@@ -205,26 +234,29 @@ class Kumpulan3 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: Text("Stories"),
+          title: Text("Stories 3"),
+          backgroundColor: Colors.black,
         ),
         body: Center(
-            child: Column(children: <Widget>[
-          Container(
-            child: RaisedButton(
-              child: Text('Cerita 1'),
-              color: Colors.black54,
-              textColor: Colors.white,
-              onPressed: () {},
-            ),
-          ),
-          Container(
-            child: RaisedButton(
-              child: Text('Cerita 2'),
-              color: Colors.black54,
-              textColor: Colors.white,
-              onPressed: () {},
-            ),
-          ),
-        ])));
+            child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: <Widget>[
+              Container(
+                child: RaisedButton(
+                  child: Text('Cerita 1'),
+                  color: Colors.black54,
+                  textColor: Colors.white,
+                  onPressed: () {},
+                ),
+              ),
+              Container(
+                child: RaisedButton(
+                  child: Text('Cerita 2'),
+                  color: Colors.black54,
+                  textColor: Colors.white,
+                  onPressed: () {},
+                ),
+              ),
+            ])));
   }
 }

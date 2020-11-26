@@ -196,9 +196,13 @@ class Kumpulan1 extends StatelessWidget {
                     child: Text('Cerita 1'),
                     color: Colors.black54,
                     textColor: Colors.white,
+<<<<<<< HEAD
                     onPressed: () {
                       gotostor1(context);
                     },
+=======
+                    onPressed: () {},
+>>>>>>> d9182b6e0face5c4e43579ee700532a36fa7c16f
                   ),
                 ),
                 Container(
@@ -206,9 +210,13 @@ class Kumpulan1 extends StatelessWidget {
                     child: Text('Cerita 2'),
                     color: Colors.black54,
                     textColor: Colors.white,
+<<<<<<< HEAD
                     onPressed: () {
                       gotostor2(context);
                     },
+=======
+                    onPressed: () {},
+>>>>>>> d9182b6e0face5c4e43579ee700532a36fa7c16f
                   ),
                 ),
               ]))
@@ -224,6 +232,7 @@ class Kumpulan2 extends StatelessWidget {
           title: Text("Stories 2"),
           backgroundColor: Colors.black,
         ),
+<<<<<<< HEAD
         body: new Stack(children: <Widget>[
           new Container(
             decoration: BoxDecoration(
@@ -253,6 +262,29 @@ class Kumpulan2 extends StatelessWidget {
                 ),
               ]))
         ]));
+=======
+        body: Center(
+            child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: <Widget>[
+              Container(
+                child: RaisedButton(
+                  child: Text('Cerita 1'),
+                  color: Colors.black54,
+                  textColor: Colors.white,
+                  onPressed: () {},
+                ),
+              ),
+              Container(
+                child: RaisedButton(
+                  child: Text('Cerita 2'),
+                  color: Colors.black54,
+                  textColor: Colors.white,
+                  onPressed: () {},
+                ),
+              ),
+            ])));
+>>>>>>> d9182b6e0face5c4e43579ee700532a36fa7c16f
   }
 }
 
@@ -264,6 +296,7 @@ class Kumpulan3 extends StatelessWidget {
           title: Text("Stories 3"),
           backgroundColor: Colors.black,
         ),
+<<<<<<< HEAD
         body: new Stack(children: <Widget>[
           new Container(
             decoration: BoxDecoration(
@@ -407,6 +440,29 @@ class Story2 extends StatelessWidget {
                     ]),
                   ])))
         ]));
+=======
+        body: Center(
+            child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: <Widget>[
+              Container(
+                child: RaisedButton(
+                  child: Text('Cerita 1'),
+                  color: Colors.black54,
+                  textColor: Colors.white,
+                  onPressed: () {},
+                ),
+              ),
+              Container(
+                child: RaisedButton(
+                  child: Text('Cerita 2'),
+                  color: Colors.black54,
+                  textColor: Colors.white,
+                  onPressed: () {},
+                ),
+              ),
+            ])));
+>>>>>>> d9182b6e0face5c4e43579ee700532a36fa7c16f
   }
 }
 

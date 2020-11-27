@@ -197,7 +197,7 @@ class Kumpulan1 extends StatelessWidget {
                   children: <Widget>[
                 Container(
                   child: RaisedButton(
-                    child: Text('Cermin Ajaib'),
+                    child: Text('Kisah Cermin Ajaib'),
                     color: Colors.black54,
                     textColor: Colors.white,
                     onPressed: () {

@@ -39,6 +39,24 @@ class Home extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.center,
                   crossAxisAlignment: CrossAxisAlignment.stretch,
                   children: <Widget>[
+                    const SizedBox(),
+                    Text(
+                      "Flutter",
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 40,
+                      ),
+                      textAlign: TextAlign.center,
+                    ),
+                    const SizedBox(),
+                    Text(
+                      "Story",
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 30,
+                      ),
+                      textAlign: TextAlign.center,
+                    ),
                     const SizedBox(
                       width: 90,
                       height: 50,
@@ -197,6 +215,10 @@ class Kumpulan1 extends StatelessWidget {
                   children: <Widget>[
                 Container(
                   child: RaisedButton(
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(18.0),
+                      side: BorderSide(color: Colors.white),
+                    ),
                     child: Text('Kisah Cermin Ajaib'),
                     color: Colors.black54,
                     textColor: Colors.white,
@@ -207,6 +229,10 @@ class Kumpulan1 extends StatelessWidget {
                 ),
                 Container(
                   child: RaisedButton(
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(18.0),
+                      side: BorderSide(color: Colors.white),
+                    ),
                     child: Text('Kisah Telur Emas'),
                     color: Colors.black54,
                     textColor: Colors.white,
@@ -255,6 +281,10 @@ class Kumpulan2 extends StatelessWidget {
                   children: <Widget>[
                 Container(
                   child: RaisedButton(
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(18.0),
+                      side: BorderSide(color: Colors.white),
+                    ),
                     child: Text('Kelinci Dan Kura-kura'),
                     color: Colors.black54,
                     textColor: Colors.white,
@@ -265,6 +295,10 @@ class Kumpulan2 extends StatelessWidget {
                 ),
                 Container(
                   child: RaisedButton(
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(18.0),
+                      side: BorderSide(color: Colors.white),
+                    ),
                     child: Text('Anjing Yang Serakah'),
                     color: Colors.black54,
                     textColor: Colors.white,
@@ -313,6 +347,10 @@ class Kumpulan3 extends StatelessWidget {
                   children: <Widget>[
                 Container(
                   child: RaisedButton(
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(18.0),
+                      side: BorderSide(color: Colors.white),
+                    ),
                     child: Text('Legenda Telaga Warna'),
                     color: Colors.black54,
                     textColor: Colors.white,
@@ -323,6 +361,10 @@ class Kumpulan3 extends StatelessWidget {
                 ),
                 Container(
                   child: RaisedButton(
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(18.0),
+                      side: BorderSide(color: Colors.white),
+                    ),
                     child: Text('Legenda Candi Prambanan'),
                     color: Colors.black54,
                     textColor: Colors.white,
@@ -410,11 +452,15 @@ class Story2 extends StatelessWidget {
           ),
           new SingleChildScrollView(
               child: new Container(
+                  margin: const EdgeInsets.all(20.0),
                   color: Colors.black54,
                   child: new Column(children: <Widget>[
-                    Container(child: Image.asset('assets/images/dongeng2.jpg')),
+                    Container(
+                      margin: const EdgeInsets.all(20.0),
+                      child: Image.asset('assets/images/dongeng2.jpg'),
+                    ),
                     new Container(
-                      child: new Column(children: <Widget>[
+                      child: Column(children: <Widget>[
                         new Text(
                           'Alkisah, ada seekor angsa yang dapat mengeluarkan sebutir telur emas setiap hari. Angsa itu dimiliki seorang petani dan istrinya. Mereka bisa hidup nyaman dan berkecukupan berkat telur tersebut.',
                           style: new TextStyle(
@@ -422,12 +468,12 @@ class Story2 extends StatelessWidget {
                         ),
                       ]),
                     ),
-                    new Column(
+                    Column(
                       children: [
                         new Text(
                           'Kenyamanan ini berlangsung cukup lama. Namun pada suatu hari, tiba-tiba saja terbersit ide di benak petani tersebut. “Kenapa aku harus mendapatkan satu telur per hari? Kenapa tidak kuambil semuanya sekaligus dan jadi kaya raya?” pikirnya.',
                           style: new TextStyle(
-                              fontSize: 18, color: new Color(0xFF9E9E9E)),
+                              fontSize: 18, color: Colors.white70),
                         ),
                       ],
                     ),

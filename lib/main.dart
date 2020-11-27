@@ -33,39 +33,41 @@ class Home extends StatelessWidget {
                     image: AssetImage('assets/images/wllpaper2.jpg'),
                     fit: BoxFit.cover)),
           ),
-          new Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: <Widget>[
-                const SizedBox(
-                  height: 50,
-                ),
-                RaisedButton(
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(18.0),
-                    side: BorderSide(color: Colors.white),
-                  ),
-                  child: Text('Start'),
-                  color: Colors.black45,
-                  textColor: Colors.white,
-                  padding: const EdgeInsets.all(10.0),
-                  onPressed: () {
-                    gotoSecondact(context);
-                  },
-                ),
-                const SizedBox(),
-                Center(
-                  child: RaisedButton(
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(18.0),
-                      side: BorderSide(color: Colors.white),
+          new Container(
+              margin: EdgeInsets.fromLTRB(30.0, 0.0, 30.0, 0.0),
+              child: (new Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  crossAxisAlignment: CrossAxisAlignment.stretch,
+                  children: <Widget>[
+                    const SizedBox(
+                      width: 90,
+                      height: 50,
                     ),
-                    child: Text('Quit'),
-                    color: Colors.black54,
-                    textColor: Colors.white,
-                    onPressed: () {},
-                  ),
-                ),
-              ])
+                    RaisedButton(
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(18.0),
+                        side: BorderSide(color: Colors.white),
+                      ),
+                      child: Text('Start'),
+                      color: Colors.black45,
+                      textColor: Colors.white,
+                      padding: const EdgeInsets.all(10.0),
+                      onPressed: () {
+                        gotoSecondact(context);
+                      },
+                    ),
+                    const SizedBox(),
+                    RaisedButton(
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(18.0),
+                        side: BorderSide(color: Colors.white),
+                      ),
+                      child: Text('Quit'),
+                      color: Colors.black45,
+                      textColor: Colors.white,
+                      onPressed: () {},
+                    ),
+                  ])))
         ])));
   }
 }
@@ -106,9 +108,11 @@ class Kategory extends StatelessWidget {
                     image: AssetImage('assets/images/wllpaper2.jpg'),
                     fit: BoxFit.cover)),
           ),
-          new Center(
+          new Container(
+            margin: EdgeInsets.fromLTRB(30.0, 0.0, 30.0, 20.0),
             child: new Column(
                 mainAxisAlignment: MainAxisAlignment.center,
+                crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: <Widget>[
                   Container(
                     child: RaisedButton(
@@ -193,7 +197,7 @@ class Kumpulan1 extends StatelessWidget {
                   children: <Widget>[
                 Container(
                   child: RaisedButton(
-                    child: Text('Cerita 1'),
+                    child: Text('Cermin Ajaib'),
                     color: Colors.black54,
                     textColor: Colors.white,
                     onPressed: () {
@@ -203,7 +207,7 @@ class Kumpulan1 extends StatelessWidget {
                 ),
                 Container(
                   child: RaisedButton(
-                    child: Text('Cerita 2'),
+                    child: Text('Kisah Telur Emas'),
                     color: Colors.black54,
                     textColor: Colors.white,
                     onPressed: () {
@@ -217,6 +221,20 @@ class Kumpulan1 extends StatelessWidget {
 }
 
 class Kumpulan2 extends StatelessWidget {
+  gotostorr1(BuildContext context) {
+    Navigator.push(
+      context,
+      MaterialPageRoute(builder: (context) => Storyy1()),
+    );
+  }
+
+  gotostorr2(BuildContext context) {
+    Navigator.push(
+      context,
+      MaterialPageRoute(builder: (context) => Storyy2()),
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -237,18 +255,22 @@ class Kumpulan2 extends StatelessWidget {
                   children: <Widget>[
                 Container(
                   child: RaisedButton(
-                    child: Text('Cerita 1'),
+                    child: Text('Kelinci Dan Kura-kura'),
                     color: Colors.black54,
                     textColor: Colors.white,
-                    onPressed: () {},
+                    onPressed: () {
+                      gotostorr1(context);
+                    },
                   ),
                 ),
                 Container(
                   child: RaisedButton(
-                    child: Text('Cerita 2'),
+                    child: Text('Anjing Yang Serakah'),
                     color: Colors.black54,
                     textColor: Colors.white,
-                    onPressed: () {},
+                    onPressed: () {
+                      gotostorr2(context);
+                    },
                   ),
                 ),
               ]))
@@ -291,7 +313,7 @@ class Kumpulan3 extends StatelessWidget {
                   children: <Widget>[
                 Container(
                   child: RaisedButton(
-                    child: Text('Cerita 1'),
+                    child: Text('Legenda Telaga Warna'),
                     color: Colors.black54,
                     textColor: Colors.white,
                     onPressed: () {
@@ -301,7 +323,7 @@ class Kumpulan3 extends StatelessWidget {
                 ),
                 Container(
                   child: RaisedButton(
-                    child: Text('Cerita 2'),
+                    child: Text('Legenda Candi Prambanan'),
                     color: Colors.black54,
                     textColor: Colors.white,
                     onPressed: () {
@@ -430,12 +452,102 @@ class Story2 extends StatelessWidget {
 
 class Storyy1 extends StatelessWidget {
   @override
-  Widget build(BuildContext context) {}
+  Widget build(BuildContext context) {
+    return Scaffold(
+        appBar: AppBar(
+          title: Text("Kelinci dan Kura-kura"),
+          backgroundColor: Colors.black,
+        ),
+        body: new Stack(children: <Widget>[
+          new Container(
+            decoration: BoxDecoration(
+                image: DecorationImage(
+                    image: AssetImage('assets/images/wllpaper2.jpg'),
+                    fit: BoxFit.cover)),
+          ),
+          new SingleChildScrollView(
+              child: new Container(
+                  color: Colors.black54,
+                  child: new Column(children: <Widget>[
+                    Container(child: Image.asset('assets/images/fabel1.jpg')),
+                    new Container(
+                      child: new Column(children: <Widget>[
+                        new Text(
+                          'Ada sebuah kelinci yang tinggal di sebuah hutan. Ia sangat sombong karena memiliki kemampuan lari yang sangat cepat. Kesombongannya itu sering ia tunjuki di depan teman-temannya.',
+                          style: new TextStyle(
+                              fontSize: 18, color: Colors.white70),
+                        ),
+                      ]),
+                    ),
+                    new Column(
+                      children: [
+                        new Text(
+                          'Suatu hari, si kelinci melihat kura-kura yang jalan sangat lambat. Kepribadian yang sombong membuat si kelinci mengolok-ngolok kura-kura dengan mengajaknya lomba berlari. Perlombaan lari itu membuat semua hewan berbondong-bondong menontonnya.',
+                          style: new TextStyle(
+                              fontSize: 18, color: new Color(0xFF9E9E9E)),
+                        ),
+                      ],
+                    ),
+                    new Column(children: [
+                      new Text(
+                        'Perlombaan dimulai, Kelinci vs Kura-kura. Kelinci melaju sangat cepat dan melihat kura-kura ketinggalan jauh. Merasa akan menang, ia memutuskan untuk tidur karena ia pikir toh kura-kura tidak akan bisa mengejarnya.',
+                        style:
+                            new TextStyle(fontSize: 18, color: Colors.white70),
+                      ),
+                    ]),
+                    new Column(children: [
+                      new Text(
+                        'Kelinci bangun dari tidurnya. Ia menengok ke belakang dan tidak melihat kura-kura. Namun, tak disangka ternyata kelinci tidur terlalu lelap dan tidak menyadari bahwa kura-kura telah menyalipnya. Akhirnya kura-kura memenangkan perlombaan itu.',
+                        style:
+                            new TextStyle(fontSize: 18, color: Colors.white70),
+                      ),
+                    ]),
+                  ])))
+        ]));
+  }
 }
 
 class Storyy2 extends StatelessWidget {
   @override
-  Widget build(BuildContext context) {}
+  Widget build(BuildContext context) {
+    return Scaffold(
+        appBar: AppBar(
+          title: Text("Anjing Yang Serakah"),
+          backgroundColor: Colors.black,
+        ),
+        body: new Stack(children: <Widget>[
+          new Container(
+            decoration: BoxDecoration(
+                image: DecorationImage(
+                    image: AssetImage('assets/images/wllpaper2.jpg'),
+                    fit: BoxFit.cover)),
+          ),
+          new SingleChildScrollView(
+              child: new Container(
+                  color: Colors.black54,
+                  child: new Column(children: <Widget>[
+                    Container(child: Image.asset('assets/images/fabel2.jpg')),
+                    new Container(
+                      child: new Column(children: <Widget>[
+                        new Text(
+                          'Suatu hari seekor anjing mencuri sepotong daging. Si anjing berlari menuju sungai karena ia berusaha kabur dari pemilik daging yang mengejarnya. Saat sedang berlari di atas jembatan sungai, ia melihat seekor anjing lain yang sedang membawa daging.',
+                          style: new TextStyle(
+                              fontSize: 18, color: Colors.white70),
+                        ),
+                      ]),
+                    ),
+                    new Column(
+                      children: [
+                        new Text(
+                          'Melihat hal itu, ia berpikiran untuk mencurinya juga sehingga ia memiliki dua daging. Ia berlari menuju anjing itu dan saat ingin mencuri dagingnya justru jatuh ke sungai. Ternyata, anjing yang ia lihat adalah bayangan dari dirinya.',
+                          style: new TextStyle(
+                              fontSize: 18, color: new Color(0xFF9E9E9E)),
+                        ),
+                      ],
+                    ),
+                  ])))
+        ]));
+  }
 }
 
 class Storyyy1 extends StatelessWidget {

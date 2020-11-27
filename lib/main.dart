@@ -116,7 +116,7 @@ class Kategory extends StatelessWidget {
                         borderRadius: BorderRadius.circular(18.0),
                         side: BorderSide(color: Colors.white),
                       ),
-                      child: Text('Kategori 1'),
+                      child: Text('Dongeng'),
                       color: Colors.black54,
                       textColor: Colors.white,
                       onPressed: () {
@@ -126,7 +126,7 @@ class Kategory extends StatelessWidget {
                   ),
                   Container(
                     child: RaisedButton(
-                      child: Text('Kategori 2'),
+                      child: Text('Fabel'),
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(18.0),
                         side: BorderSide(color: Colors.white),
@@ -144,7 +144,7 @@ class Kategory extends StatelessWidget {
                         borderRadius: BorderRadius.circular(18.0),
                         side: BorderSide(color: Colors.white),
                       ),
-                      child: Text('Kategori 3'),
+                      child: Text('Legenda'),
                       color: Colors.black54,
                       textColor: Colors.white,
                       onPressed: () {
@@ -177,7 +177,7 @@ class Kumpulan1 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: Text("Stories 1"),
+          title: Text("Dongeng"),
           backgroundColor: Colors.black,
         ),
         body: new Stack(children: <Widget>[
@@ -196,13 +196,9 @@ class Kumpulan1 extends StatelessWidget {
                     child: Text('Cerita 1'),
                     color: Colors.black54,
                     textColor: Colors.white,
-<<<<<<< HEAD
                     onPressed: () {
                       gotostor1(context);
                     },
-=======
-                    onPressed: () {},
->>>>>>> d9182b6e0face5c4e43579ee700532a36fa7c16f
                   ),
                 ),
                 Container(
@@ -210,13 +206,9 @@ class Kumpulan1 extends StatelessWidget {
                     child: Text('Cerita 2'),
                     color: Colors.black54,
                     textColor: Colors.white,
-<<<<<<< HEAD
                     onPressed: () {
                       gotostor2(context);
                     },
-=======
-                    onPressed: () {},
->>>>>>> d9182b6e0face5c4e43579ee700532a36fa7c16f
                   ),
                 ),
               ]))
@@ -229,10 +221,9 @@ class Kumpulan2 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: Text("Stories 2"),
+          title: Text("Fabel"),
           backgroundColor: Colors.black,
         ),
-<<<<<<< HEAD
         body: new Stack(children: <Widget>[
           new Container(
             decoration: BoxDecoration(
@@ -262,41 +253,31 @@ class Kumpulan2 extends StatelessWidget {
                 ),
               ]))
         ]));
-=======
-        body: Center(
-            child: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: <Widget>[
-              Container(
-                child: RaisedButton(
-                  child: Text('Cerita 1'),
-                  color: Colors.black54,
-                  textColor: Colors.white,
-                  onPressed: () {},
-                ),
-              ),
-              Container(
-                child: RaisedButton(
-                  child: Text('Cerita 2'),
-                  color: Colors.black54,
-                  textColor: Colors.white,
-                  onPressed: () {},
-                ),
-              ),
-            ])));
->>>>>>> d9182b6e0face5c4e43579ee700532a36fa7c16f
   }
 }
 
 class Kumpulan3 extends StatelessWidget {
+  gotostorrr1(BuildContext context) {
+    Navigator.push(
+      context,
+      MaterialPageRoute(builder: (context) => Storyyy1()),
+    );
+  }
+
+  gotostorrr2(BuildContext context) {
+    Navigator.push(
+      context,
+      MaterialPageRoute(builder: (context) => Storyyy2()),
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: Text("Stories 3"),
+          title: Text("Legenda"),
           backgroundColor: Colors.black,
         ),
-<<<<<<< HEAD
         body: new Stack(children: <Widget>[
           new Container(
             decoration: BoxDecoration(
@@ -313,7 +294,9 @@ class Kumpulan3 extends StatelessWidget {
                     child: Text('Cerita 1'),
                     color: Colors.black54,
                     textColor: Colors.white,
-                    onPressed: () {},
+                    onPressed: () {
+                      gotostorrr1(context);
+                    },
                   ),
                 ),
                 Container(
@@ -321,7 +304,9 @@ class Kumpulan3 extends StatelessWidget {
                     child: Text('Cerita 2'),
                     color: Colors.black54,
                     textColor: Colors.white,
-                    onPressed: () {},
+                    onPressed: () {
+                      gotostorrr2(context);
+                    },
                   ),
                 ),
               ]))
@@ -440,29 +425,6 @@ class Story2 extends StatelessWidget {
                     ]),
                   ])))
         ]));
-=======
-        body: Center(
-            child: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: <Widget>[
-              Container(
-                child: RaisedButton(
-                  child: Text('Cerita 1'),
-                  color: Colors.black54,
-                  textColor: Colors.white,
-                  onPressed: () {},
-                ),
-              ),
-              Container(
-                child: RaisedButton(
-                  child: Text('Cerita 2'),
-                  color: Colors.black54,
-                  textColor: Colors.white,
-                  onPressed: () {},
-                ),
-              ),
-            ])));
->>>>>>> d9182b6e0face5c4e43579ee700532a36fa7c16f
   }
 }
 
@@ -478,10 +440,184 @@ class Storyy2 extends StatelessWidget {
 
 class Storyyy1 extends StatelessWidget {
   @override
-  Widget build(BuildContext context) {}
+  Widget build(BuildContext context) {
+    return Scaffold(
+        appBar: AppBar(
+          title: Text("Legenda Telaga Warna"),
+          backgroundColor: Colors.black,
+        ),
+        body: new Stack(children: <Widget>[
+          new Container(
+            decoration: BoxDecoration(
+                image: DecorationImage(
+                    image: AssetImage('assets/images/wllpaper2.jpg'),
+                    fit: BoxFit.cover)),
+          ),
+          new SingleChildScrollView(
+              child: new Container(
+                  color: Colors.black54,
+                  child: new Column(children: <Widget>[
+                    Container(child: Image.asset('assets/images/legenda1.jpg')),
+                    new Container(
+                      child: new Column(children: <Widget>[
+                        new Text(
+                          'Zaman dahulu, ada sebuah kerajaan di Jawa Barat bernama Kutatanggeuhan. Kutatanggeuhan merupakan kerajaan yang makmur dan damai. Rakyatnya hidup tenang dan sejahtera karena dipimpin oleh raja yang bijaksana. Raja Kutatanggeuhan bernama Prabu Suwartalaya dan permaisurinya bernama Ratu Purbamanah. Raja dan ratu sangant bijaksana sehingga kerjaan yang dipimpin makmur dan tenteram.',
+                          style: new TextStyle(
+                              fontSize: 18, color: Colors.white70),
+                        ),
+                      ]),
+                    ),
+                    new Column(
+                      children: [
+                        new Text(
+                          'Semua sangat menyenangkan. Sayangnya, Prabu dan istrinya belum memiliki anak. Itu membuat pasangan kerajaan itu sangat sedih. Penasehat Prabu menyarankan, agar mereka mengangkat anak. Namun Prabu dan Ratu tidak setuju. “Buat kami, anak kandung adalah lebih baik dari pada anak angkat,” sahut mereka.',
+                          style: new TextStyle(
+                              fontSize: 18, color: new Color(0xFF9E9E9E)),
+                        ),
+                      ],
+                    ),
+                    new Column(children: [
+                      new Text(
+                        'Ratu sering murung dan menangis. Prabu pun ikut sedih melihat istrinya. Lalu Prabu pergi ke hutan untuk bertapa. Di sana sang Prabu terus berdoa, agar dikaruniai anak. Beberapa bulan kemudian, keinginan mereka terkabul. Ratu pun mulai hamil. Seluruh rakyat di kerajaan itu senang sekali. Mereka membanjiri istana dengan hadiah.',
+                        style:
+                            new TextStyle(fontSize: 18, color: Colors.white70),
+                      ),
+                    ]),
+                    new Column(children: [
+                      new Text(
+                        'Sembilan bulan kemudian, Ratu melahirkan seorang putri yang diberinama Gilang Rukmini . Penduduk negeri pun kembali mengirimi putri kecil itu aneka hadiah. Bayi itu tumbuh menjadi anak yang lucu. Belasan tahun kemudian, ia sudah menjadi remaja yang cantik.',
+                        style:
+                            new TextStyle(fontSize: 18, color: Colors.white70),
+                      ),
+                    ]),
+                    new Column(children: [
+                      new Text(
+                        'Prabu dan Ratu sangat menyayangi putrinya. Mereka memberi putrinya apa pun yang dia inginkan. Namun itu membuatnya menjadi gadis yang manja. Kalau keinginannya tidak terpenuhi, gadis itu akan marah. Ia bahkan sering berkata kasar. Walaupun begitu, orangtua dan rakyat di kerajaan itu mencintainya.',
+                        style:
+                            new TextStyle(fontSize: 18, color: Colors.white70),
+                      ),
+                    ]),
+                    new Column(children: [
+                      new Text(
+                        'Hari berlalu, Putri pun tumbuh menjadi gadis tercantik di seluruh negeri. Dalam beberapa hari, Putri akan berusia 17 tahun. Maka para penduduk di negeri itu pergi ke istana. Mereka membawa aneka hadiah yang sangat indah. Prabu mengumpulkan hadiah-hadiah yang sangat banyak itu, lalu menyimpannya dalam ruangan istana. Sewaktu-waktu, ia bisa menggunakannya untuk kepentingan rakyat.',
+                        style:
+                            new TextStyle(fontSize: 18, color: Colors.white70),
+                      ),
+                    ]),
+                    new Column(children: [
+                      new Text(
+                        'Prabu hanya mengambil sedikit emas dan permata. Ia membawanya ke ahli perhiasan. “Tolong, buatkan kalung yang sangat indah untuk putriku,” kata Prabu. “Dengan senang hati, Yang Mulia,” sahut ahli perhiasan. Ia lalu bekerja d sebaik mungkin, dengan sepenuh hati. Ia ingin menciptakan kalung yang paling indah di dunia, karena ia sangat menyayangi Putri.',
+                        style:
+                            new TextStyle(fontSize: 18, color: Colors.white70),
+                      ),
+                    ]),
+                    new Column(children: [
+                      new Text(
+                        'Hari ulang tahun pun tiba. Penduduk negeri berkumpul di alun-alun istana. Ketika Prabu dan Ratu datang, orang menyambutnya dengan gembira. Sambutan hangat makin terdengar, ketika Putri yang cantik jelita muncul di hadapan semua orang. Semua orang mengagumi kecantikannya.',
+                        style:
+                            new TextStyle(fontSize: 18, color: Colors.white70),
+                      ),
+                    ]),
+                    new Column(children: [
+                      new Text(
+                        'Prabu lalu bangkit dari kursinya. Kalung yang indah sudah dipegangnya. “Putriku tercinta, hari ini aku berikan kalung ini untukmu. Kalung ini pemberian orang-orang dari penjuru negeri. Mereka sangat mencintaimu. Mereka mempersembahkan hadiah ini, karena mereka gembira melihatmu tumbuh jadi dewasa. Pakailah kalung ini, Nak,” kata Prabu.',
+                        style:
+                            new TextStyle(fontSize: 18, color: Colors.white70),
+                      ),
+                    ]),
+                    new Column(children: [
+                      new Text(
+                        'Putri menerima kalung itu. Lalu ia melihat kalung itu sekilas. “Aku tak mau memakainya. Kalung ini jelek!” seru Putri. Kemudian ia melempar kalung itu. Kalung yang indah pun rusak. Emas dan permatanya tersebar di lantai.',
+                        style:
+                            new TextStyle(fontSize: 18, color: Colors.white70),
+                      ),
+                    ]),
+                    new Column(children: [
+                      new Text(
+                        'Itu sungguh mengejutkan. Tak seorang pun menyangka, Putri akan berbuat seperti itu. Tak seorang pun bicara. Suasana hening. Tiba-tiba meledaklah tangis Ratu Purbamanah. Dia sangat sedih melihat kelakuan putrinya.Akhirnya semua pun meneteskan air mata, hingga istana pun basah oleh air mata mereka. Mereka terus menangis hingga air mata mereka membanjiri istana, dan tiba-tiba saja dari dalam tanah pun keluar air yang deras, makin lama makin banyak. Hingga akhirnya kerajaan Kutatanggeuhan tenggelam dan terciptalah sebuah danau yang sangat indah.',
+                        style:
+                            new TextStyle(fontSize: 18, color: Colors.white70),
+                      ),
+                    ]),
+                    new Column(children: [
+                      new Text(
+                        'Di hari yang cerah, kita bisa melihat danau itu penuh warna yang indah dan mengagumkan. Warna itu berasal dari bayangan hutan, tanaman, bunga-bunga, dan langit di sekitar telaga. Namun orang mengatakan, warna-warna itu berasal dari kalung Putri yang tersebar di dasar telaga.',
+                        style:
+                            new TextStyle(fontSize: 18, color: Colors.white70),
+                      ),
+                    ]),
+                  ])))
+        ]));
+  }
 }
 
 class Storyyy2 extends StatelessWidget {
   @override
-  Widget build(BuildContext context) {}
+  Widget build(BuildContext context) {
+    return Scaffold(
+        appBar: AppBar(
+          title: Text("Legenda Candi Prambanan"),
+          backgroundColor: Colors.black,
+        ),
+        body: new Stack(children: <Widget>[
+          new Container(
+            decoration: BoxDecoration(
+                image: DecorationImage(
+                    image: AssetImage('assets/images/wllpaper2.jpg'),
+                    fit: BoxFit.cover)),
+          ),
+          new SingleChildScrollView(
+              child: new Container(
+                  color: Colors.black54,
+                  child: new Column(children: <Widget>[
+                    Container(child: Image.asset('assets/images/legenda2.jpg')),
+                    new Container(
+                      child: new Column(children: <Widget>[
+                        new Text(
+                          'Pada zaman dahulu hiduplah seorang raja bernama Prabu Baka. Ia memiliki kerajaan yang megah yang bernama kerajaan pengging. Kerajaan Pengging merupakan kerajaan yang kaya pada masa itu. Karena kekayaannya kerajaan Pengging menjadi terkenal hingga terdengar oleh seorang raja dari kerajaan lain yang bernama Bandung Bondowoso. Karena kekayaan yang dimiliki membuat Bandung Bondowoso berambisi untuk untuk merebut kerajaan tersebut.',
+                          style: new TextStyle(
+                              fontSize: 18, color: Colors.white70),
+                        ),
+                      ]),
+                    ),
+                    new Column(
+                      children: [
+                        new Text(
+                          'Memiliki pasukan yang kuat Bandung Bondowoso mempersiapkan diri untuk menyerang kerajaan Pengging. Penyerbuan pun dimulai. Pasukan Bandung Bondowoso berhasil mengalahkan pasukan kerajaan Pengging. Bandung Bondowoso pun berhasil membunuh raja dari kerajaan tersebut yaitu Prabu Baka. Pada saat ingin membunuh keluarga kerajaan, Bandung melihat sesosok gadis cantik bernama Roro Jongrang yang tidak lain adalah anak dari Prabu Baka. Bandung jatuh cinta dengan Roro Jongrang. Bandung berjanji tidak akan membunuh Roro Jongrang apabila Ia mau menjadi isti Bandung.',
+                          style: new TextStyle(
+                              fontSize: 18, color: new Color(0xFF9E9E9E)),
+                        ),
+                      ],
+                    ),
+                    new Column(children: [
+                      new Text(
+                        'Roro Jongrang tidak ingin menikahi Bandung Bondowoso, namun karena tidak ingin dibunuh oleh Bandung Bondowoso Roro Jongrang akhirnya menerima tawaran Bandung. Dengan satu syarat. Bandung Bondowoso harus membuat seribu candi dalam satu malam sebagai persembahan terhadap Roro Jonggrang.',
+                        style:
+                            new TextStyle(fontSize: 18, color: Colors.white70),
+                      ),
+                    ]),
+                    new Column(children: [
+                      new Text(
+                        'Mempertimbangkan paras Roro Jongrang yang Cantik, Bandung menerima tantangan Roro Jongrang membuat seribu candi dalam satu malam. Dengan dibantu oleh jin yang dipelihara oleh Bandung Bondowoso. Ia dapat dengan mudah untuk menyelesaikan tantangan tersebut. Melihat kecurangan yang Bandung perbuat. Roro Jongrang mencari akal untuk membuat Bandung Bondowoso kalah dan tidak menikahinya. Waktu hampir habis dan Bandung Bondowoso hampir menyelesaikan tantangan yang diberika kepadanya.',
+                        style:
+                            new TextStyle(fontSize: 18, color: Colors.white70),
+                      ),
+                    ]),
+                    new Column(children: [
+                      new Text(
+                        'Akhirnya Roro Jongrang menyuruh pelayan kerajaan untuk menumbuk padi dengan lumpang dan membuat api sehingga langit menjadi berwarna oranye. Pertanda hari sudah pagi. Bandung Bondowoso kalah karena tipuan Roro Jongrang. Candi yang telah ia buat telah berjumlah 999 buah. Ia hanya butuh satu candi lagi untuk menyelesaikan tantangan itu, namun karena tipuan Roro Jongrang para jin Bandung Bondowoso menghilang akibat langit telah menjadi oranye dan Bandung tidak dapat menyelesaikan tantangan Roro jongrang.',
+                        style:
+                            new TextStyle(fontSize: 18, color: Colors.white70),
+                      ),
+                    ]),
+                    new Column(children: [
+                      new Text(
+                        'Mengetahui Roro Jongrang berbuat curang, Bandung merasa dibodohi. Ia sangat murka dan mengutuk Roro Jongrang menjadi Candi untuk menggenapkan candi yang ia buat menjadi seribu. Candi-candi tersebut sekarang bernama candi prambanan.',
+                        style:
+                            new TextStyle(fontSize: 18, color: Colors.white70),
+                      ),
+                    ]),
+                  ])))
+        ]));
+  }
 }

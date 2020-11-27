@@ -47,6 +47,8 @@ flutter:
     - assets/images/wllpaper2.jpg
     - assets/images/dongeng1.jpg
     - assets/images/dongeng2.jpg
+    - assets/images/legenda1.jpg
+    - assets/images/legenda2.jpg
 
   # To add assets to your application, add an assets section, like this:
   # assets:

@@ -33,39 +33,41 @@ class Home extends StatelessWidget {
                     image: AssetImage('assets/images/wllpaper2.jpg'),
                     fit: BoxFit.cover)),
           ),
-          new Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: <Widget>[
-                const SizedBox(
-                  height: 50,
-                ),
-                RaisedButton(
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(18.0),
-                    side: BorderSide(color: Colors.white),
-                  ),
-                  child: Text('Start'),
-                  color: Colors.black45,
-                  textColor: Colors.white,
-                  padding: const EdgeInsets.all(10.0),
-                  onPressed: () {
-                    gotoSecondact(context);
-                  },
-                ),
-                const SizedBox(),
-                Center(
-                  child: RaisedButton(
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(18.0),
-                      side: BorderSide(color: Colors.white),
+          new Container(
+              margin: EdgeInsets.fromLTRB(30.0, 0.0, 30.0, 0.0),
+              child: (new Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  crossAxisAlignment: CrossAxisAlignment.stretch,
+                  children: <Widget>[
+                    const SizedBox(
+                      width: 90,
+                      height: 50,
                     ),
-                    child: Text('Quit'),
-                    color: Colors.black54,
-                    textColor: Colors.white,
-                    onPressed: () {},
-                  ),
-                ),
-              ])
+                    RaisedButton(
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(18.0),
+                        side: BorderSide(color: Colors.white),
+                      ),
+                      child: Text('Start'),
+                      color: Colors.black45,
+                      textColor: Colors.white,
+                      padding: const EdgeInsets.all(10.0),
+                      onPressed: () {
+                        gotoSecondact(context);
+                      },
+                    ),
+                    const SizedBox(),
+                    RaisedButton(
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(18.0),
+                        side: BorderSide(color: Colors.white),
+                      ),
+                      child: Text('Quit'),
+                      color: Colors.black45,
+                      textColor: Colors.white,
+                      onPressed: () {},
+                    ),
+                  ])))
         ])));
   }
 }
@@ -106,9 +108,11 @@ class Kategory extends StatelessWidget {
                     image: AssetImage('assets/images/wllpaper2.jpg'),
                     fit: BoxFit.cover)),
           ),
-          new Center(
+          new Container(
+            margin: EdgeInsets.fromLTRB(30.0, 0.0, 30.0, 20.0),
             child: new Column(
                 mainAxisAlignment: MainAxisAlignment.center,
+                crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: <Widget>[
                   Container(
                     child: RaisedButton(

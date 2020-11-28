@@ -1,3 +1,5 @@
+import 'dart:io';
+
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 
@@ -83,7 +85,9 @@ class Home extends StatelessWidget {
                       child: Text('Quit'),
                       color: Colors.black45,
                       textColor: Colors.white,
-                      onPressed: () {},
+                      onPressed: () {
+                        exit(0);
+                      },
                     ),
                   ])))
         ])));
@@ -417,7 +421,7 @@ class Story1 extends StatelessWidget {
                               new Text(
                                 'Para wanita yang awalnya bersemangat ingin menjadi ratu langsung patah semangat mendengar persyaratan tersebut. Mereka khawatir dan malu kalau semua orang akan mengetahui borok-borok mereka.',
                                 style: new TextStyle(
-                                    fontSize: 18, color: new Color(0xFF9E9E9E)),
+                                    fontSize: 18, color: Colors.white70),
                               ),
                             ],
                           ),
@@ -544,7 +548,7 @@ class Storyy1 extends StatelessWidget {
                               new Text(
                                 'Suatu hari, si kelinci melihat kura-kura yang jalan sangat lambat. Kepribadian yang sombong membuat si kelinci mengolok-ngolok kura-kura dengan mengajaknya lomba berlari. Perlombaan lari itu membuat semua hewan berbondong-bondong menontonnya.',
                                 style: new TextStyle(
-                                    fontSize: 18, color: new Color(0xFF9E9E9E)),
+                                    fontSize: 18, color: Colors.white70),
                               ),
                             ],
                           ),
@@ -607,7 +611,7 @@ class Storyy2 extends StatelessWidget {
                               new Text(
                                 'Melihat hal itu, ia berpikiran untuk mencurinya juga sehingga ia memiliki dua daging. Ia berlari menuju anjing itu dan saat ingin mencuri dagingnya justru jatuh ke sungai. Ternyata, anjing yang ia lihat adalah bayangan dari dirinya.',
                                 style: new TextStyle(
-                                    fontSize: 18, color: new Color(0xFF9E9E9E)),
+                                    fontSize: 18, color: Colors.white70),
                               ),
                             ],
                           )
@@ -656,7 +660,7 @@ class Storyyy1 extends StatelessWidget {
                               new Text(
                                 'Semua sangat menyenangkan. Sayangnya, Prabu dan istrinya belum memiliki anak. Itu membuat pasangan kerajaan itu sangat sedih. Penasehat Prabu menyarankan, agar mereka mengangkat anak. Namun Prabu dan Ratu tidak setuju. “Buat kami, anak kandung adalah lebih baik dari pada anak angkat,” sahut mereka.',
                                 style: new TextStyle(
-                                    fontSize: 18, color: new Color(0xFF9E9E9E)),
+                                    fontSize: 18, color: Colors.white70),
                               ),
                             ],
                           ),
@@ -763,7 +767,7 @@ class Storyyy2 extends StatelessWidget {
                         padding: EdgeInsets.all(5.0),
                         decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(10.0),
-                            border: Border.all(color: Colors.white)),
+                            border: Border.all(color: Colors.white70)),
                         child: new Column(children: <Widget>[
                           new Text(
                             'Pada zaman dahulu hiduplah seorang raja bernama Prabu Baka. Ia memiliki kerajaan yang megah yang bernama kerajaan pengging. Kerajaan Pengging merupakan kerajaan yang kaya pada masa itu. Karena kekayaannya kerajaan Pengging menjadi terkenal hingga terdengar oleh seorang raja dari kerajaan lain yang bernama Bandung Bondowoso. Karena kekayaan yang dimiliki membuat Bandung Bondowoso berambisi untuk untuk merebut kerajaan tersebut.',
@@ -775,7 +779,7 @@ class Storyyy2 extends StatelessWidget {
                               new Text(
                                 'Memiliki pasukan yang kuat Bandung Bondowoso mempersiapkan diri untuk menyerang kerajaan Pengging. Penyerbuan pun dimulai. Pasukan Bandung Bondowoso berhasil mengalahkan pasukan kerajaan Pengging. Bandung Bondowoso pun berhasil membunuh raja dari kerajaan tersebut yaitu Prabu Baka. Pada saat ingin membunuh keluarga kerajaan, Bandung melihat sesosok gadis cantik bernama Roro Jongrang yang tidak lain adalah anak dari Prabu Baka. Bandung jatuh cinta dengan Roro Jongrang. Bandung berjanji tidak akan membunuh Roro Jongrang apabila Ia mau menjadi isti Bandung.',
                                 style: new TextStyle(
-                                    fontSize: 18, color: new Color(0xFF9E9E9E)),
+                                    fontSize: 18, color: Colors.white70),
                               ),
                             ],
                           ),
